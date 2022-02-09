@@ -20,8 +20,8 @@ std::mt19937 RNG(rd());
 /// <summary>
 /// Constantes pour les sorts de défense
 /// </summary>
-const int DEF_GUERISON{ 3 };
-const int DEF_PROTECTION{ 6 };
+const int DEF_GUERISON{ -3 };
+const int DEF_PROTECTION{ -6 };
 
 
 /// <summary>

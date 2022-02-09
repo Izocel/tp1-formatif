@@ -29,9 +29,14 @@ public:
 	/// <returns>vrai si la cible est toujour en vie</returns>
 	bool utiliserBaton(Magicien& refCible, int mode);
 
+	bool dommageBouclier(int dommage);
+	bool dommageVie(int dommage);
+
 private:
 	int m_ptsVie{ 50 };
 	int m_ptsMagie{ 50 };
+	int m_ptsVieMax{ 100 };
+	int m_ptsMagieMax{ 50 };
 	BatonMagique m_Baton;
 	BouclierMagique m_Bouclier;
 };

@@ -11,19 +11,24 @@ bool Sort::appliquer(Magicien& refMagicien)
 	if (m_type.find("Atk")) {
 
 		if (m_nom.find("Incinérateur")) {
-
+			// Possibiliter de faire une méthode dommageBouclierVie() 
+			//avec check et delta dommage
+			refMagicien.dommageBouclier(m_dommage);
+			refMagicien.dommageVie(m_dommage);
 		}
 		else {
-
+			// Foudre
+			refMagicien.dommageVie(m_dommage);
 		}
 	}
 	else {
 		if (m_nom.find("Guérison")) {
-
+			refMagicien.dommageBouclier(m_dommage);
 		}
 		else {
-
-		}
+			// Protection
+			refMagicien.dommageVie(m_dommage);
+		}	
 	}
 	return refMagicien.estVivant();
 }
