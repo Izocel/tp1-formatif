@@ -8,6 +8,8 @@ bool Magicien::utiliserBaton(Magicien& refCible, int mode)
 	return mode == 0 ? m_Baton.lancerSortAtk(refCible)
 		: m_Baton.lancerSortDef(refCible);
 }
+
+
 bool Magicien::dommageBouclier(int dommage)
 {
 	return m_Bouclier.recevoirDommage(dommage);
