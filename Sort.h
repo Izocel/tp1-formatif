@@ -27,6 +27,7 @@ public:
 
 	int getDommage() const;
 	std::string getType() const;
+	std::string getNom() const { return m_nom; };
 
 	
 private:

@@ -8,7 +8,7 @@ class BatonMagique
 {
 
 public:
-	BatonMagique(){};
+	BatonMagique() {};
 	BatonMagique(Sort& refSortAtk, Sort& refSortDef);
 
 	bool lancerSortAtk(Magicien& refMagicien);
@@ -18,6 +18,7 @@ public:
 private:
 	Sort m_sortAtk;
 	Sort m_sortDef;
+	std::string m_nom;
 
 };
 #endif

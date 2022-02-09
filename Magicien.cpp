@@ -2,7 +2,7 @@
 
 bool Magicien::estVivant() {return m_ptsVie > 0;}
 
-void Magicien::equiperBaton(BatonMagique& refBaton){ m_Baton = refBaton; }
+void Magicien::equiperBaton(const BatonMagique& refBaton){ m_Baton = refBaton; }
 bool Magicien::utiliserBaton(Magicien& refCible, int mode)
 {
 	return mode == 0 ? m_Baton.lancerSortAtk(refCible)
