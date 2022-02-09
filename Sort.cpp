@@ -23,11 +23,11 @@ bool Sort::appliquer(Magicien& refMagicien)
 	}
 	else {
 		if (m_nom.find("Guérison")) {
-			refMagicien.dommageBouclier(m_dommage);
+			refMagicien.dommageVie(m_dommage);
 		}
 		else {
 			// Protection
-			refMagicien.dommageVie(m_dommage);
+			refMagicien.dommageBouclier(m_dommage);
 		}	
 	}
 	return refMagicien.estVivant();
