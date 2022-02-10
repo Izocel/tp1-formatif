@@ -1,13 +1,16 @@
 #ifndef SORT_DEF
 #define SORT_DEF
 
+#include <iostream>
+#include <string>
+
 #include "Magicien.h"
 
 class Sort
 {
 
 public:
-	Sort() { };
+	Sort(){};
 	/// <summary>
 	/// Constructeur
 	/// </summary>
@@ -22,14 +25,13 @@ public:
 	/// </summary>
 	/// <param name="refMagicien">Le magicien affecté</param>
 	/// <returns></returns>
-	bool appliquer(Magicien& refMagicien);
+	bool appliquer(Magicien refMagicien);
 
 
 	int getDommage() const;
 	std::string getType() const;
 	std::string getNom() const { return m_nom; };
 
-	
 private:
 	std::string m_nom{ "" };
 	std::string m_type{ "" };

@@ -1,6 +1,7 @@
 #ifndef MAGICIEN_DEF
 #define MAGICIEN_DEF
 
+
 #include <string>
 #include <iostream>
 #include "BatonMagique.h"
@@ -19,7 +20,7 @@ public:
 	/// Permet de cahnger le baton du magicien
 	/// </summary>
 	/// <param name="refBaton">Le baton en référence</param>
-	void equiperBaton(const BatonMagique& refBaton);
+	void equiperBaton(BatonMagique refBaton);
 
 	/// <summary>
 	/// Appliquera le sort selon le mode
@@ -27,8 +28,8 @@ public:
 	/// </summary>
 	/// <param name="magicienCible">L'instance cible</param>
 	/// <param name="mode">[0/1] (atk/def)</param>
-	/// <returns>vrai si la cible est toujour en vie</returns>
-	bool utiliserBaton(Magicien& refCible, int mode);
+	/// <returns>vrai si la cible est toujours en vie</returns>
+	bool utiliserBaton(Magicien refCible, int mode);
 
 	bool dommageBouclier(int dommage);
 	bool dommageVie(int dommage);
